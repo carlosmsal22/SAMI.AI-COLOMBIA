@@ -13,6 +13,7 @@
 - [🚀 Guía de Inicio Rápido](GETTING_STARTED.md)
 - [📋 Lista de Prompts Sugeridos](example_prompts.md)
 - [📈 Roadmap y funcionalidades planeadas](ROADMAP.md)
+- [📄 Guía de Instalación de WSL + Ubuntu (PDF)](Guia_WSL_Ubuntu_Instalacion.pdf)
 
 ---
 
