@@ -8,6 +8,12 @@
   Inteligencia de mercado para Colombia y América Latina.
 </p>
 
+<p align="center">
+  <a href="https://carlosmsal22.github.io/SAMI.AI-COLOMBIA/">
+    <img src="https://img.shields.io/badge/📘%20Ver-Documentación-blue" alt="Ver Documentación">
+  </a>
+</p>
+
 ---
 
 ## 📊 Descripción
