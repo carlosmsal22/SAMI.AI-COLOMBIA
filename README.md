@@ -1,4 +1,4 @@
-# SAMI Colombia Enterprise Suite
+# SAMI.AI Colombia Suite
 
 This toolkit provides:
 - Industry-targeted data
