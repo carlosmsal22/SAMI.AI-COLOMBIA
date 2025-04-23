@@ -35,7 +35,7 @@
 
 ---
 
-## 🇨🇴 Funciones Especiales para Colombia
+## Funciones Especiales para Colombia
 
 - **Scraping geolocalizado**: Éxito, Jumbo, Alkosto, ReclameAquí, SIC.gov.co.
 - **Análisis por estrato socioeconómico (1 a 6)**.
