@@ -1,0 +1,20 @@
+site_name: SAMI.AI COLOMBIA
+site_url: https://carlosmsal22.github.io/SAMI.AI-COLOMBIA/
+repo_url: https://github.com/carlosmsal22/SAMI.AI-COLOMBIA
+nav:
+  - Inicio: README.md
+  - Comenzar: GETTING_STARTED.md
+  - Prompts de Ejemplo: example_prompts.md
+  - Roadmap: ROADMAP.md
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: default
+    primary: blue grey
+    accent: light blue
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
