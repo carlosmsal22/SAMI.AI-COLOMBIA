@@ -6,6 +6,7 @@
 
 SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en investigación de mercado, segmentación, análisis cultural, escucha social y scraping, adaptado al contexto colombiano. Este GPT personalizado permite ejecutar análisis B2B y B2C con foco local y regional.
 
+
 ✅ Compatible con datos por estrato socioeconómico, regiones culturales (Paisa, Rolo, Costeño) y fuentes como SIC.gov.co, DANE, INVIMA, ReclameAquí, Éxito, entre otros.
 ---
 
@@ -29,7 +30,7 @@ SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en invest
 
 ## 📚 ¿Cómo utilizar este GPT?
 
-Este modelo puede integrarse con [ChatGPT Custom GPTs]((https://chatgpt.com/g/g-6803ba313cc88191b6a11e9cc37f0077-sami-ai-colombia) y puede ser extendido vía Streamlit, API o entornos analíticos.
+Este modelo puede integrarse con [ChatGPT Custom GPTs](https://chatgpt.com/g/g-6803ba313cc88191b6a11e9cc37f0077-sami-ai-colombia) y puede ser extendido vía Streamlit, API o entornos analíticos.
 
 Consulta los prompts sugeridos o añade tus propios comandos en español o inglés.
 
