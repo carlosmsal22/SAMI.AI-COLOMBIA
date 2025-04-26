@@ -77,4 +77,4 @@ mkdocs gh-deploy
 
 ---
 
-© 2025 | Powered by SA Market Insights
+© 2025 | Powered by The Insights AI
