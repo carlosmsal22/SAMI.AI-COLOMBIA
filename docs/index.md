@@ -28,7 +28,7 @@
 
 ## 📚 ¿Cómo utilizar este GPT?
 
-Este modelo puede integrarse con [ChatGPT Custom GPTs](https://chat.openai.com/gpts/editor) y puede ser extendido vía Streamlit, API o entornos analíticos.
+Este modelo puede integrarse con [ChatGPT Custom GPTs]((https://chatgpt.com/g/g-6803ba313cc88191b6a11e9cc37f0077-sami-ai-colombia) y puede ser extendido vía Streamlit, API o entornos analíticos.
 
 Consulta los prompts sugeridos o añade tus propios comandos en español o inglés.
 
