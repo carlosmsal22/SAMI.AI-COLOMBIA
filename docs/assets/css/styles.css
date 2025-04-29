@@ -1,25 +1,37 @@
+/* Estilos generales */
 :root {
-    --primary: #2c3e50;
-    --secondary: #4CAF50;
-    --accent: #e74c3c;
-    --light-bg: #f8f9fa;
-    --dark-text: #2c3e50;
+  --primary: #2c3e50;
+  --secondary: #4CAF50;
+  --accent: #e74c3c;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--dark-text);
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    position: relative; /* Necesario para el botón de idioma */
-    animation: fadeIn 1s ease-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* Botón de idioma */
+.btn-language {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  z-index: 1000;
+  text-decoration: none;
 }
 
-/* [Todos tus otros estilos...] */
+.hero-text {
+  font-size: 1.4em;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* [Añade aquí TODOS tus otros estilos originales] */
