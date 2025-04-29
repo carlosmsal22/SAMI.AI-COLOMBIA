@@ -287,7 +287,7 @@
 <div class="cta-section">
     <h2>Transforma tu negocio con inteligencia artificial</h2>
     <p>Únete a las empresas líderes que ya están utilizando SAMI.AI para tomar decisiones basadas en datos.</p>
-    <a href="#contacto" class="cta-button">Solicitar Demo</a>
+    <a href="mailto:alejandra@theinsightsai.com?subject=Solicitud%20de%20Demo%20SAMI.AI&body=Hola,%20estoy%20interesado%20en%20una%20demo%20de%20SAMI.AI" class="cta-button">Solicitar Demo</a>
 </div>
 
 <!-- TRUST BADGES -->
