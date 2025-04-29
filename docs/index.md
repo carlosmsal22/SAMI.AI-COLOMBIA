@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="LOGO.png" width="180" alt="SAMI.AI COLOMBIA Logo">
+  <img src="LOGO.png" width="200" alt="SAMI.AI COLOMBIA Logo">
 </p>
 
 <h1 align="center">🎯 BIENVENIDO A SAMI.AI COLOMBIA</h1>
 
-<p align="center" style="font-size: 1.1em;">
+<p align="center" style="font-size: 1.2em;">
   <strong>SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en investigación de mercado, segmentación, análisis cultural, escucha social y scraping, adaptado al contexto colombiano.</strong><br>
   <strong>Este GPT personalizado permite ejecutar análisis B2B y B2C con foco local y regional.</strong>
 </p>
@@ -13,17 +13,18 @@
 
 ## 🔥 POTENCIA ANALÍTICA
 
-<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #4CAF50;">
-  <strong>✅ Compatible con:</strong> Datos por estrato socioeconómico, regiones culturales (Paisa, Rolo, Costeño) y fuentes como SIC.gov.co, DANE, INVIMA, ReclameAquí, Éxito, entre otros.
+<div style="background-color: #f0f8ff; padding: 25px; border-radius: 8px; margin: 25px 0; border-left: 5px solid #4CAF50;">
+  <h3 style="font-size: 1.4em; margin-bottom: 15px; color: #2c3e50;">✔️ COMPATIBLE CON:</h3>
+  <p style="font-size: 1.3em; line-height: 1.6; font-weight: bold;">
+    Datos por estrato socioeconómico, regiones culturales (Paisa, Rolo, Costeño) y fuentes como<br>
+    <span style="color: #e74c3c;">SIC.gov.co</span>, 
+    <span style="color: #e74c3c;">DANE</span>, 
+    <span style="color: #e74c3c;">INVIMA</span>, 
+    <span style="color: #e74c3c;">ReclameAquí</span>, 
+    <span style="color: #e74c3c;">Éxito</span>, 
+    entre otros.
+  </p>
 </div>
-
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 30px 0;">
-
-  <div style="background-color: #e6f7ff; padding: 20px; border-radius: 8px;">
-    <h3>📌 ANÁLISIS POR:</h3>
-    <p><strong>• Estrato socioeconómico (1 a 6)</strong><br>
-    <strong>• Matriz cultural: Paisa, Rolo, Costeño, Caleño</strong></p>
-  </div>
 
   <div style="background-color: #fff0f5; padding: 20px; border-radius: 8px;">
     <h3>🔍 FUENTES DE DATOS:</h3>
