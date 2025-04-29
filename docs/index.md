@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -41,11 +41,13 @@
             padding: 25px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
             border-top: 4px solid var(--secondary);
+            margin: 20px 0;
         }
         .comparison-table {
             width: 100%;
             border-collapse: collapse;
             margin: 40px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         .testimonial {
             background: white;
@@ -114,6 +116,63 @@
             filter: grayscale(0) opacity(1);
             transform: scale(1.1);
         }
+        .feature-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+        .feature-item {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary), #1a252f);
+            color: white;
+            padding: 60px 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 60px 0;
+        }
+        .cta-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            background: #c0392b;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+        @media (max-width: 768px) {
+            .stats-grid, .feature-section {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -168,6 +227,25 @@
     </p>
 </div>
 
+<!-- FEATURE SECTION -->
+<div class="feature-section">
+    <div class="feature-item">
+        <div class="feature-icon">📊</div>
+        <h3>Análisis en Tiempo Real</h3>
+        <p>Monitoreo constante de tendencias y cambios en el mercado colombiano con actualizaciones en tiempo real.</p>
+    </div>
+    <div class="feature-item">
+        <div class="feature-icon">🔍</div>
+        <h3>Datos Precisos</h3>
+        <p>Información verificada y procesada mediante algoritmos avanzados para máxima precisión.</p>
+    </div>
+    <div class="feature-item">
+        <div class="feature-icon">🚀</div>
+        <h3>Soluciones Adaptables</h3>
+        <p>Herramientas personalizables para diferentes sectores de la economía colombiana.</p>
+    </div>
+</div>
+
 <!-- TESTIMONIAL -->
 <div class="testimonial">
     <div style="display: flex; align-items: center; margin-bottom: 15px;">
@@ -201,6 +279,13 @@
         <td style="padding: 15px; text-align: center; color: var(--secondary); font-weight: bold;">$1.5M COP</td>
     </tr>
 </table>
+
+<!-- CTA SECTION -->
+<div class="cta-section">
+    <h2>Transforma tu negocio con inteligencia artificial</h2>
+    <p>Únete a las empresas líderes que ya están utilizando SAMI.AI para tomar decisiones basadas en datos.</p>
+    <a href="#contacto" class="cta-button">Solicitar Demo</a>
+</div>
 
 <!-- TRUST BADGES -->
 <div style="text-align: center; margin: 40px 0;">
@@ -248,6 +333,11 @@
     <a href="mailto:abermudez@theinsightsai.com?subject=Quiero%20mi%20descuento%20SAMI.AI&body=Hola,%20estoy%20interesado%20en%20la%20oferta%20de%20lanzamiento" style="display: inline-block; background: white; color: #f54ea2; padding: 8px 15px; border-radius: 5px; font-weight: bold; margin-top: 10px; text-decoration: none;">¡QUIERO MI DESCUENTO!</a>
     <button onclick="document.getElementById('special-offer').style.display='none'" style="position: absolute; top: 5px; right: 5px; background: none; border: none; color: white; font-weight: bold; cursor: pointer;">X</button>
 </div>
+
+<footer>
+    <p>This site is open source. <a href="https://github.com/your-repo" target="_blank">Improve this page</a>.</p>
+    <p>SAMI.AI COLOMBIA © 2023 - Todos los derechos reservados</p>
+</footer>
 
 <script>
   // Timer de 24 horas
