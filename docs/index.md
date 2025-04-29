@@ -117,6 +117,10 @@ body {
 
 </div>
 
+<footer style="margin-top: 50px; text-align: center; padding: 20px; border-top: 1px solid #eee;">
+    <p>This site is open source. <a href="https://github.com/your-repo" target="_blank">Improve this page</a>.</p>
+</footer>
+
 <script>
 // Language Switcher
 document.getElementById('language-switcher').addEventListener('click', function() {
