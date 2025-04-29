@@ -169,7 +169,7 @@
     </tr>
 </table>
 
-<!-- TRUST BADGES -->
+<!-- TRUST BADGES - VERSIÓN CORREGIDA -->
 <div style="text-align: center; margin: 40px 0;">
     <div style="display: inline-flex; align-items: center; background-color: var(--light-bg); padding: 10px 20px; border-radius: 8px;">
         ★★★★★ <span style="font-weight: bold; margin-left: 10px;">4.9/5</span>
@@ -178,10 +178,11 @@
     </div>
     <div style="margin-top: 30px;">
         <p style="font-size: 0.9em; margin-bottom: 10px;">Recomendado por:</p>
-        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap;">
-            <img src="andicom-logo.png" width="100" style="filter: grayscale(30%) brightness(1.1); opacity: 0.8;">
-            <img src="mintic-logo.png" width="80">
-            <img src="bogota-tech-logo.png" width="90">
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; align-items: center;">
+            <!-- LOGOS CON ENLACES QUE SÍ FUNCIONAN (ejemplos) -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Andicom_logo.png/320px-Andicom_logo.png" width="100" style="height: auto; filter: grayscale(30%) brightness(1.1); opacity: 0.8;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Logo_MinTIC.svg/320px-Logo_MinTIC.svg.png" width="80" style="height: auto;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bogota_coa.png/200px-Bogota_coa.png" width="90" style="height: auto;">
         </div>
     </div>
 </div>
