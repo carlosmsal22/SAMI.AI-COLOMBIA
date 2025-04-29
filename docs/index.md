@@ -88,7 +88,7 @@
 
 <!-- HERO SECTION MODIFICADA -->
 <div class="hero">
-    <img src="LOGO.png" width="220" alt="SAMI.AI COLOMBIA">
+    <img src="LOGO.png" width="220">
     <!-- ELIMINADO: <h1> con el texto que no querías -->
     <p style="font-size: 1.4em; font-weight: 300;">
         <strong>INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</strong>
