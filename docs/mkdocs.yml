@@ -20,3 +20,7 @@ markdown_extensions:
       permalink: true
       plugins:
   - i18n
+extra_css:
+  - assets/css/styles.css
+extra_javascript:
+  - assets/js/scripts.js
