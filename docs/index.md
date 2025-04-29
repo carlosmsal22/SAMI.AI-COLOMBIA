@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAMI.AI COLOMBIA | Inteligencia Artificial para Mercados</title>
+    <title> | Inteligencia Artificial para Mercados</title>
     <style>
         :root {
             --primary: #2c3e50;
