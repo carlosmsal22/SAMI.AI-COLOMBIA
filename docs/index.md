@@ -183,6 +183,9 @@
     <p style="font-size: 1.4em; font-weight: 300;">
         <strong>INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</strong>
     </p>
+    <p style="max-width: 800px; margin: 20px auto; font-size: 1.1em; line-height: 1.6;">
+        SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en investigación de mercado, segmentación, análisis cultural, escucha social y scraping, adaptado al contexto colombiano. Este GPT personalizado permite ejecutar análisis B2B y B2C con foco local y regional.
+    </p>
 </div>
 
 <!-- STATS BANNER -->
