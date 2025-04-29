@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -76,6 +75,13 @@
             max-width: 300px;
             z-index: 1000;
         }
+        .data-source {
+            background-color: #f1c40f;
+            color: #000;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 800;
+        }
     </style>
 </head>
 <body>
@@ -84,7 +90,7 @@
 <div class="hero">
     <img src="LOGO.png" width="220" alt="SAMI.AI COLOMBIA">
     <h1 style="font-size: 2.4em; margin: 10px 0;">🚀 SAMI.AI COLOMBIA</h1>
-    <p style="font-size: 1.4em; font-weight: 300;">INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</p>
+    <p style="font-size: 1.4em; font-weight: 300;"><strong>INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</strong></p>
 </div>
 
 <!-- STATS BANNER -->
@@ -116,13 +122,13 @@
         <span style="color: var(--accent);">• Estratos socioeconómicos (1-6)</span><br>
         <span style="color: #3498db;">• Culturas: Paisa, Rolo, Costeño, Caleño</span><br>
         <span style="color: #2ecc71;">• Datos oficiales: </span>
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">SIC.gov.co</span>, 
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">DANE</span>, 
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">INVIMA</span><br>
+        <span class="data-source">SIC.gov.co</span>, 
+        <span class="data-source">DANE</span>, 
+        <span class="data-source">INVIMA</span><br>
         <span style="color: #9b59b6;">• Plataformas clave: </span>
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">ReclameAquí</span>, 
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">Éxito</span>, 
-        <span style="background-color: #f1c40f; color: #000; padding: 3px 8px; border-radius: 4px;">Twitter/X</span>
+        <span class="data-source">ReclameAquí</span>, 
+        <span class="data-source">Éxito</span>, 
+        <span class="data-source">Twitter/X</span>
     </div>
     <p style="text-align: center; margin-top: 25px; font-size: 1.1em;">
         <em>+20 fuentes adicionales disponibles</em> 📊
@@ -206,7 +212,7 @@
 <div id="special-offer" class="offer-popup">
     <div style="font-weight: bold; font-size: 1.2em; margin-bottom: 10px;">🚀 ¡Oferta Lanzamiento!</div>
     <p>50% OFF en tu primer análisis (Solo hasta <span id="countdown" style="font-weight: bold;">24:00 hrs</span>)</p>
-    <a href="#contacto" style="display: inline-block; background: white; color: #f54ea2; padding: 8px 15px; border-radius: 5px; font-weight: bold; margin-top: 10px; text-decoration: none;">¡QUIERO MI DESCUENTO!</a>
+    <a href="mailto:abermudez@theinsightsai.com?subject=Quiero%20mi%20descuento%20SAMI.AI&body=Hola,%20estoy%20interesado%20en%20la%20oferta%20de%20lanzamiento" style="display: inline-block; background: white; color: #f54ea2; padding: 8px 15px; border-radius: 5px; font-weight: bold; margin-top: 10px; text-decoration: none;">¡QUIERO MI DESCUENTO!</a>
     <button onclick="document.getElementById('special-offer').style.display='none'" style="position: absolute; top: 5px; right: 5px; background: none; border: none; color: white; font-weight: bold; cursor: pointer;">X</button>
 </div>
 
