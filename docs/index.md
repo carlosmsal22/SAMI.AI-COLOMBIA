@@ -86,9 +86,10 @@
 </head>
 <body>
 
-<!-- HERO SECTION MODIFICADA -->
-<div class="hero">
-    <img src="LOGO.png" width="220">
+<div class="hero" style="position: relative;">
+  <!-- Capa que tapa el texto no deseado -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 30px; background: white; z-index: 999;"></div>
+  <img src="LOGO.png" width="220">
     <!-- ELIMINADO: <h1> con el texto que no querías -->
     <p style="font-size: 1.4em; font-weight: 300;">
         <strong>INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</strong>
