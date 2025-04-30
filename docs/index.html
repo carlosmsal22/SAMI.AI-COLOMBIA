@@ -195,6 +195,7 @@
 
 <!-- Demo Access Section -->
 <!-- After your intro paragraph -->
+<!-- After your intro paragraph -->
 <div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
 
     <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 1.4em;">Explora Nuestras Demostraciones Interactivas</h3>
@@ -206,56 +207,102 @@
     <!-- Demo Cards Grid -->
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px;">
         
-        <!-- Demo Cards Section -->
-<div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
-
-    <!-- GPT DEMO CARD -->
-    <!-- Updated Demo Cards Section -->
-<div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
-
-    <!-- [Keep existing heading and intro text...] -->
-    
-    <!-- GPT DEMO CARD -->
-    <div class="demo-card">
-        <!-- [Keep existing image and heading...] -->
-        <div style="display: flex; gap: 10px; justify-content: center;">
-            <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
-               target="_blank"
-               class="cta-button" 
-               style="background: #3498db; flex: 1;">
-               ▶ Demo Interactiva
-            </a>
-            <button onclick="showComingSoon('GPT')" 
-                    class="cta-button"
-                    style="background: #2c3e50; flex: 1; cursor: pointer;">
-               📄 PDF (Próximamente)
-            </button>
+        <!-- GPT DEMO CARD -->
+        <div class="demo-card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+            <div style="height: 180px; background: #f0f7ff; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
+                <img src="/assets/img/SAMI-GPT.png" 
+                     alt="Captura SAMI-GPT Demos" 
+                     style="height: 100%; object-fit: contain; transition: transform 0.3s ease;">
+            </div>
+            <h4 style="color: #2c3e50; margin: 10px 0;">Demo: Análisis con GPT</h4>
+            <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">
+                Ejemplos reales de generación de informes automáticos y segmentación predictiva.
+            </p>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
+                   target="_blank"
+                   class="cta-button" 
+                   style="background: #3498db; flex: 1;">
+                   ▶ Demo Interactiva
+                </a>
+                <a href="/assets/docs/SAMI-GPT-Guide.pdf" 
+                   class="cta-button"
+                   style="background: #2c3e50; flex: 1;"
+                   download>
+                   📄 PDF Resumen
+                </a>
+            </div>
+        </div>
+        
+        <!-- LATAM DEMO CARD -->
+        <div class="demo-card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+            <div style="height: 180px; background: #f0fff4; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
+                <img src="/assets/img/SAMI-LATAM.png" 
+                     alt="Captura SAMI-LATAM" 
+                     style="height: 100%; object-fit: contain; transition: transform 0.3s ease;">
+            </div>
+            <h4 style="color: #2c3e50; margin: 10px 0;">Demo: Expansión LATAM</h4>
+            <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">
+                Modelos adaptados a mercados regionales con datos culturales específicos.
+            </p>
+            <div style="display: flex; gap: 10px; justify-content: center;">
+                <a href="https://carlosmsal22.github.io/SAMI-AI-LATAM/" 
+                   target="_blank"
+                   class="cta-button" 
+                   style="background: #2ecc71; flex: 1;">
+                   🌎 Versión LATAM
+                </a>
+                <a href="/assets/docs/SAMI-LATAM-Guide.pdf" 
+                   class="cta-button"
+                   style="background: #2c3e50; flex: 1;"
+                   download>
+                   📄 PDF Resumen
+                </a>
+            </div>
         </div>
     </div>
     
-    <!-- LATAM DEMO CARD -->
-    <div class="demo-card">
-        <!-- [Keep existing image and heading...] -->
-        <div style="display: flex; gap: 10px; justify-content: center;">
-            <a href="https://carlosmsal22.github.io/SAMI-AI-LATAM/" 
-               target="_blank"
-               class="cta-button" 
-               style="background: #2ecc71; flex: 1;">
-               🌎 Versión LATAM
-            </a>
-            <button onclick="showComingSoon('LATAM')" 
-                    class="cta-button"
-                    style="background: #2c3e50; flex: 1; cursor: pointer;">
-               📄 PDF (Próximamente)
-            </button>
-        </div>
-    </div>
-
-    <!-- Notification System -->
-    <div id="pdf-notification" style="display: none; position: fixed; top: 20px; right: 20px; background: #2ecc71; color: white; padding: 15px; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2); z-index: 1000;">
-        ¡Los resúmenes PDF estarán disponibles pronto!
-    </div>
+    <p style="margin-top: 20px; font-size: 0.9em; color: #777;">
+        <em>Nota: Las demostraciones se abrirán en una nueva pestaña.</em>
+    </p>
 </div>
+
+<!-- Add this to your <style> section -->
+<style>
+    /* Hover Effects */
+    .demo-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    .demo-card img:hover {
+        transform: scale(1.05);
+    }
+    
+    /* Responsive Adjustments */
+    @media (max-width: 650px) {
+        .demo-access {
+            padding: 15px;
+        }
+        .demo-card {
+            padding: 15px;
+        }
+    }
+</style>
+
+<!-- Google Analytics Tracking -->
+<script>
+document.querySelectorAll('.demo-card a').forEach(link => {
+    link.addEventListener('click', function() {
+        const demoType = this.href.includes('GPT') ? 'gpt' : 'latam';
+        const actionType = this.download ? 'pdf_download' : 'demo_launch';
+        
+        gtag('event', actionType, {
+            'event_category': 'demo_interaction',
+            'event_label': demoType
+        });
+    });
+});
+</script>
 
 <script>
 function showComingSoon(demoType) {
