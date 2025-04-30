@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,270 +7,210 @@
     <title>SAMI.AI COLOMBIA | Inteligencia Artificial para Mercados</title>
     <style>
         :root {
-            --primary: #0a2540; /* Dark blue from insightsai */
-            --secondary: #00d4ff; /* Light blue from insightsai */
+            --primary: #0a2540;
+            --secondary: #00d4ff;
             --accent: #e74c3c;
             --light-bg: #f8f9fa;
             --dark-text: #2c3e50;
             --gradient-bg: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
         }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--dark-text);
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            animation: fadeIn 1s ease-out;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .hero {
-            text-align: center;
-            padding: 40px 0;
-        }
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 15px;
-            margin: 40px 0;
-        }
-        .feature-card {
-            background: white;
-            border-radius: 10px;
-            padding: 25px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            border-top: 4px solid var(--secondary);
-            margin: 20px 0;
-        }
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 40px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .testimonial {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            margin: 40px 0;
-        }
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-            z-index: 1000;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-            100% { transform: scale(1); }
-        }
-        .offer-popup {
-            position: fixed;
-            bottom: 20px;
-            left: 20px;
-            background: linear-gradient(135deg, #ff7676, #f54ea2);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(245, 78, 162, 0.4);
-            max-width: 300px;
-            z-index: 1000;
-        }
-        .data-source {
-            background-color: #f1c40f;
-            color: #000;
-            padding: 3px 8px;
-            border-radius: 4px;
-            font-weight: 800;
-        }
-        .partner-logos {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .partner-logos img {
-            width: 150px;
-            height: auto;
-            max-height: 80px;
-            object-fit: contain;
-            filter: grayscale(100%) opacity(0.9);
-            transition: all 0.3s ease;
-        }
-        .partner-logos img:hover {
-            filter: grayscale(0) opacity(1);
-            transform: scale(1.1);
-        }
-        .feature-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin: 50px 0;
-        }
-        .feature-item {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease;
-        }
-        .feature-item:hover {
-            transform: translateY(-5px);
-        }
-        .feature-icon {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            color: var(--secondary);
-        }
-        .cta-section {
-            background: var(--gradient-bg);
-            color: white;
-            padding: 60px 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin: 60px 0;
-        }
-        .cta-button {
-            display: inline-block;
-            background: var(--secondary);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: all 0.3s ease;
-        }
-        .cta-button:hover {
-            background: #00b4e6;
-            transform: scale(1.05);
-        }
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            padding: 30px 0;
-            border-top: 1px solid #eee;
-            font-size: 0.9em;
-            color: #7f8c8d;
-        }
-        @media (max-width: 768px) {
-            .stats-grid, .feature-section {
-                grid-template-columns: 1fr;
-            }
-        }
-        /* New gradient background section */
+        /* ... (keep previous styles) ... */
+        
+        /* Enhanced Gradient Section */
         .gradient-section {
             background: var(--gradient-bg);
             color: white;
-            padding: 80px 20px;
+            padding: 120px 20px;
             text-align: center;
-            margin: 40px -20px;
-            border-radius: 10px;
+            margin: 0 -20px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .gradient-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 70% 30%, rgba(0,212,255,0.1) 0%, transparent 50%);
         }
         .gradient-section h2 {
-            font-size: 2.2em;
-            margin-bottom: 20px;
+            font-size: 3em;
+            margin-bottom: 25px;
+            position: relative;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
-        .gradient-section p {
-            font-size: 1.2em;
+        .gradient-section p.lead {
+            font-size: 1.5em;
             max-width: 800px;
-            margin: 0 auto 30px;
+            margin: 0 auto 40px;
+            line-height: 1.6;
+            position: relative;
         }
         .gradient-section .cta-button {
             background: white;
             color: var(--primary);
+            font-size: 1.2em;
+            padding: 18px 40px;
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        .gradient-section .tagline {
+            margin-top: 50px;
+            font-style: italic;
+            font-size: 1.2em;
+            position: relative;
+        }
+        .gradient-section .tech-evolution {
+            font-weight: bold;
+            font-size: 1.3em;
+            margin-top: 15px;
+            position: relative;
+            color: var(--secondary);
+        }
+
+        /* Enhanced Demo Section */
+        .demo-access {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin: 60px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .demo-access h3 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .demo-access p.intro {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .demo-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            max-width: 700px;
+            margin: 0 auto;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        .demo-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        .demo-image-container {
+            height: 300px;
+            background: #f0f7ff;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .demo-image-container img {
+            height: 100%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        .demo-card:hover .demo-image-container img {
+            transform: scale(1.05);
+        }
+        .demo-card h4 {
+            color: var(--primary);
+            margin: 20px 0;
+            font-size: 1.5em;
+        }
+        .demo-card p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .demo-actions {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .demo-actions .cta-button {
+            flex: 1;
+            max-width: 250px;
+            padding: 15px 20px;
+            font-size: 1em;
+        }
+        @media (max-width: 768px) {
+            .gradient-section {
+                padding: 80px 20px;
+            }
+            .gradient-section h2 {
+                font-size: 2.2em;
+            }
+            .gradient-section p.lead {
+                font-size: 1.2em;
+            }
+            .demo-access {
+                padding: 25px;
+            }
+            .demo-actions {
+                flex-direction: column;
+            }
+            .demo-actions .cta-button {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
 <body>
-<!-- NEW HEADLINE SECTION -->
-    <div style="text-align: center; margin: 30px 0 20px 0;">
-        <h1 style="font-size: 2.5em; font-weight: 800; letter-spacing: 1px; color: var(--primary); text-transform: uppercase;">
-            SAMI.AI-COLOMBIA
-        </h1>
-    </div>
-    
-<!-- NEW GRADIENT SECTION (like your screenshot) -->
+
+<!-- Enhanced Gradient Section -->
 <div class="gradient-section">
     <h2>Unlock the Power of Data with Our AI Solutions</h2>
-    <p>Empower Your Business by Unleashing the True Potential of Data with Our Advanced AI Solutions for Strategic Decision-Making.</p>
+    <p class="lead">Empower Your Business by Unleashing the True Potential of Data with Our Advanced AI Solutions for Strategic Decision-Making.</p>
     <a href="#demo" class="cta-button">Explore Our Solutions →</a>
-    <p style="margin-top: 30px; font-style: italic;">Empathy-driven AI, impactful expertise, advanced solutions.</p>
-    <p style="margin-top: 10px; font-weight: bold;">The evolution of TECHNOLOGY is FANTASTIC</p>
+    <p class="tagline">Empathy-driven AI, impactful expertise, advanced solutions.</p>
+    <p class="tech-evolution">The evolution of TECHNOLOGY is FANTASTIC</p>
 </div>
 
-<!-- HERO SECTION -->
-<div class="hero">
-    <img src="/assets/img/LOGO.png" width="220" alt="SAMI.AI COLOMBIA">
-    <p style="font-size: 1.4em; font-weight: 300;">
-        <strong>INTELIGENCIA ARTIFICIAL ESPECIALIZADA EN MERCADOS COLOMBIANOS</strong>
-    </p>
-    <p style="max-width: 800px; margin: 20px auto; font-size: 1.1em; line-height: 1.6; font-weight: bold;">
-    SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en investigación de mercado, segmentación, análisis cultural, escucha social y scraping, adaptado al contexto colombiano. Este GPT personalizado permite ejecutar análisis B2B y B2C con foco local y regional.
-</p>
+<!-- ... (keep previous header section) ... -->
 
-<!-- Demo Access Section -->
-<div id="demo" class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
-
-    <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 1.4em;">Explora Nuestra Demostración Interactiva</h3>
+<!-- Enhanced Demo Access Section -->
+<div id="demo" class="demo-access">
+    <h3>Explora Nuestra Demostración Interactiva</h3>
+    <p class="intro">Vea a SAMI.AI en acción con este ejemplo práctico que muestra capacidades avanzadas de análisis de mercado:</p>
     
-    <p style="margin-bottom: 25px; color: #555;">
-        Vea a SAMI.AI en acción con este ejemplo práctico que muestra capacidades avanzadas de análisis de mercado:
-    </p>
-    
-    <!-- Demo Cards Grid -->
-    <div style="display: grid; grid-template-columns: 1fr; gap: 25px;">
-        
-        <!-- GPT DEMO CARD -->
-        <div class="demo-card" style="background: white; padding: 20px; border-radius: 8px; box-shadow: 0 3px 10px rgba(0,0,0,0.08); transition: all 0.3s ease; max-width: 500px; margin: 0 auto;">
-            <div style="height: 180px; background: #f0f7ff; border-radius: 6px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px; overflow: hidden;">
-                <img src="/assets/img/SAMI-GPT.png" 
-                     alt="Captura SAMI-GPT Demos" 
-                     style="height: 100%; object-fit: contain; transition: transform 0.3s ease;">
-            </div>
-            <h4 style="color: #2c3e50; margin: 10px 0;">Demo: Análisis con GPT</h4>
-            <p style="color: #666; font-size: 0.95em; margin-bottom: 15px;">
-                Ejemplos reales de generación de informes automáticos y segmentación predictiva.
-            </p>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
-                   target="_blank"
-                   class="cta-button" 
-                   style="background: var(--secondary); flex: 1;">
-                   ▶ Demo Interactiva
-                </a>
-                <a href="/docs/SAMI-GPT-Guide.pdf" 
-                   class="cta-button"
-                   style="background: var(--primary); flex: 1;"
-                   download>
-                   📄 PDF Resumen
-                </a>
-            </div>
+    <div class="demo-card">
+        <div class="demo-image-container">
+            <img src="/assets/img/SAMI-GPT.png" alt="Captura SAMI-GPT Demos">
+        </div>
+        <h4>Demo: Análisis con GPT</h4>
+        <p>Ejemplos reales de generación de informes automáticos y segmentación predictiva con inteligencia artificial especializada en el mercado colombiano.</p>
+        <div class="demo-actions">
+            <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" target="_blank" class="cta-button" style="background: var(--secondary);">
+                ▶ Demo Interactiva
+            </a>
+            <a href="/docs/SAMI-GPT-Guide.pdf" class="cta-button" style="background: var(--primary);" download>
+                📄 PDF Resumen
+            </a>
         </div>
     </div>
     
-    <p style="margin-top: 20px; font-size: 0.9em; color: #777;">
+    <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
         <em>Nota: La demostración se abrirá en una nueva pestaña.</em>
     </p>
 </div>
-
 <!-- Rest of your existing HTML content remains the same -->
 <!-- STATS BANNER -->
 <div class="stats-grid">
