@@ -248,29 +248,6 @@
         <p style="color: #666; font-size: 1.1em; margin-bottom: 30px; line-height: 1.6;">
             Ejemplos reales de generación de informes automáticos y segmentación predictiva con inteligencia artificial especializada en el mercado colombiano.
         </p>
-        <!-- Enhanced Demo Access Section with Larger Image -->
-<div id="demo" class="demo-access" style="background: white; padding: 40px; border-radius: 12px; margin: 60px auto; max-width: 1000px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05);">
-    <h3 style="color: var(--primary); margin-bottom: 25px; font-size: 2em; font-weight: 700;">Explora Nuestra Demostración Interactiva</h3>
-    
-    <p style="font-size: 1.2em; color: #555; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
-        Vea a SAMI.AI en acción con este ejemplo práctico que muestra capacidades avanzadas de análisis de mercado:
-    </p>
-    
-    <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: all 0.3s ease; max-width: 900px; margin: 0 auto; border: 1px solid rgba(0,0,0,0.05);">
-        <!-- Larger Image Container -->
-        <div style="height: 400px; background: #f0f7ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative;">
-            <img src="/assets/img/SAMI-GPT.png" 
-                 alt="Captura SAMI-GPT Demos" 
-                 style="height: 100%; width: auto; max-width: 100%; object-fit: contain; transition: transform 0.5s ease;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.9em;">
-                Click para ampliar
-            </div>
-        </div>
-        
-        <h4 style="color: var(--primary); margin: 20px 0; font-size: 1.5em;">Demo: Análisis con GPT</h4>
-        <p style="color: #666; font-size: 1.1em; margin-bottom: 30px; line-height: 1.6;">
-            Ejemplos reales de generación de informes automáticos y segmentación predictiva con inteligencia artificial especializada en el mercado colombiano.
-        </p>
         <div style="display: flex; gap: 20px; justify-content: center;">
             <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
                target="_blank"
@@ -286,44 +263,6 @@
             </a>
         </div>
     </div>
-    
-    <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
-        <em>Nota: La demostración se abrirá en una nueva pestaña.</em>
-    </p>
-</div>
-
-<!-- Add this JavaScript for image zoom -->
-<script>
-document.querySelector('.demo-access img').addEventListener('click', function() {
-    const imgSrc = this.src;
-    const overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-    overlay.style.zIndex = '10000';
-    overlay.style.cursor = 'zoom-out';
-    
-    const zoomedImg = document.createElement('img');
-    zoomedImg.src = imgSrc;
-    zoomedImg.style.maxHeight = '90vh';
-    zoomedImg.style.maxWidth = '90vw';
-    zoomedImg.style.objectFit = 'contain';
-    
-    overlay.appendChild(zoomedImg);
-    document.body.appendChild(overlay);
-    
-    overlay.addEventListener('click', function() {
-        document.body.removeChild(overlay);
-    });
-});
-</script>
-
     
     <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
         <em>Nota: La demostración se abrirá en una nueva pestaña.</em>
@@ -555,51 +494,6 @@ document.querySelector('.demo-access img').addEventListener('click', function() 
   setInterval(updateCountdown, 60000);
   updateCountdown();
 </script>
-<script>
-// PDF Availability Check
-function checkPdfAvailability(event) {
-    const pdfUrl = '/docs/SAMI-GPT-Guide.pdf';
-    const pdfButton = document.getElementById('pdfButton');
-    const notification = document.getElementById('pdfNotification');
-    
-    // Show loading state
-    pdfButton.innerHTML = '⌛ Verificando...';
-    pdfButton.style.opacity = '0.7';
-    
-    // Check if PDF exists
-    fetch(pdfUrl, { method: 'HEAD' })
-        .then(response => {
-            if (response.ok) {
-                // PDF exists - let the download proceed
-                pdfButton.innerHTML = '📄 PDF Resumen';
-                pdfButton.style.opacity = '1';
-                return true;
-            } else {
-                // PDF doesn't exist
-                event.preventDefault();
-                pdfButton.innerHTML = '📄 PDF Resumen';
-                pdfButton.style.opacity = '1';
-                notification.textContent = 'El PDF estará disponible próximamente. Contáctenos para más información.';
-                notification.style.display = 'block';
-                
-                setTimeout(() => {
-                    notification.style.display = 'none';
-                }, 5000);
-                return false;
-            }
-        })
-        .catch(error => {
-            console.error('Error checking PDF:', error);
-            event.preventDefault();
-            pdfButton.innerHTML = '📄 PDF Resumen';
-            pdfButton.style.opacity = '1';
-            notification.textContent = 'Error verificando el PDF. Intente nuevamente más tarde.';
-            notification.style.display = 'block';
-            return false;
-        });
-    
-    return true;
-}
-</script>
+
 </body>
 </html>
