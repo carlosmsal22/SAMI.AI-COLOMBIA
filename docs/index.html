@@ -11,6 +11,7 @@
             --accent: #e74c3c;
             --light-bg: #f8f9fa;
             --dark-text: #2c3e50;
+            --gradient-bg: linear-gradient(135deg, #0a2540 0%, #1a365d 100%);
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -138,7 +139,7 @@
             color: var(--secondary);
         }
         .cta-section {
-            background: linear-gradient(135deg, var(--primary), #1a252f);
+            background: var(--gradient-bg);
             color: white;
             padding: 60px 40px;
             border-radius: 10px;
@@ -173,16 +174,47 @@
                 grid-template-columns: 1fr;
             }
         }
+        /* New gradient background section */
+        .gradient-section {
+            background: var(--gradient-bg);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            margin: 40px -20px;
+            border-radius: 10px;
+        }
+        .gradient-section h2 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .gradient-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .gradient-section .cta-button {
+            background: white;
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
-<!-- NEW HEADLINE SECTION - THIS IS THE ONLY CHANGE -->
+<!-- NEW HEADLINE SECTION -->
     <div style="text-align: center; margin: 30px 0 20px 0;">
         <h1 style="font-size: 2.5em; font-weight: 800; letter-spacing: 1px; color: var(--primary); text-transform: uppercase;">
             SAMI.AI-COLOMBIA
         </h1>
     </div>
     
+<!-- NEW GRADIENT SECTION (like your screenshot) -->
+<div class="gradient-section">
+    <h2>Unlock the Power of Data with Our AI Solutions</h2>
+    <p>Empower Your Business by Unleashing the True Potential of Data with Our Advanced AI Solutions for Strategic Decision-Making.</p>
+    <a href="#demo" class="cta-button">Explore Our Solutions →</a>
+    <p style="margin-top: 30px; font-style: italic;">Empathy-driven AI, impactful expertise, advanced solutions.</p>
+    <p style="margin-top: 10px; font-weight: bold;">The evolution of TECHNOLOGY is FANTASTIC</p>
+</div>
+
 <!-- HERO SECTION -->
 <div class="hero">
     <img src="/assets/img/LOGO.png" width="220" alt="SAMI.AI COLOMBIA">
@@ -194,9 +226,7 @@
 </p>
 
 <!-- Demo Access Section -->
-<!-- After your intro paragraph -->
-<!-- After your intro paragraph -->
-<div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
+<div id="demo" class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
 
     <h3 style="color: #2c3e50; margin-bottom: 15px; font-size: 1.4em;">Explora Nuestra Demostración Interactiva</h3>
     
@@ -225,7 +255,7 @@
                    style="background: var(--secondary); flex: 1;">
                    ▶ Demo Interactiva
                 </a>
-                <a href="/assets/docs/SAMI-GPT-Guide.pdf" 
+                <a href="/docs/SAMI-GPT-Guide.pdf" 
                    class="cta-button"
                    style="background: var(--primary); flex: 1;"
                    download>
@@ -240,75 +270,7 @@
     </p>
 </div>
 
-<!-- Add this to your <style> section -->
-<style>
-    /* Hover Effects */
-    .demo-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    }
-    .demo-card img:hover {
-        transform: scale(1.05);
-    }
-    
-    /* Responsive Adjustments */
-    @media (max-width: 650px) {
-        .demo-access {
-            padding: 15px;
-        }
-        .demo-card {
-            padding: 15px;
-        }
-    }
-</style>
-
-<!-- Google Analytics Tracking -->
-<script>
-document.querySelectorAll('.demo-card a').forEach(link => {
-    link.addEventListener('click', function() {
-        const demoType = this.href.includes('GPT') ? 'gpt' : 'latam';
-        const actionType = this.download ? 'pdf_download' : 'demo_launch';
-        
-        gtag('event', actionType, {
-            'event_category': 'demo_interaction',
-            'event_label': demoType
-        });
-    });
-});
-</script>
-
-<script>
-function showComingSoon(demoType) {
-    const notification = document.getElementById('pdf-notification');
-    notification.textContent = `El PDF de ${demoType} estará disponible próximamente`;
-    notification.style.display = 'block';
-    
-    setTimeout(() => {
-        notification.style.display = 'none';
-    }, 3000);
-    
-    // Optional: Track PDF interest
-    gtag('event', 'pdf_interest', {
-        'event_category': 'demo_interaction',
-        'event_label': demoType
-    });
-}
-</script>
-
-<style>
-/* Add to your existing styles */
-#pdf-notification {
-    animation: fadeInOut 3s ease-in-out;
-}
-
-@keyframes fadeInOut {
-    0% { opacity: 0; transform: translateY(-20px); }
-    20% { opacity: 1; transform: translateY(0); }
-    80% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(-20px); }
-}
-</style>
-
+<!-- Rest of your existing HTML content remains the same -->
 <!-- STATS BANNER -->
 <div class="stats-grid">
     <div style="text-align: center;">
