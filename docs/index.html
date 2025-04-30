@@ -210,8 +210,14 @@
 <div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
 
     <!-- GPT DEMO CARD -->
+    <!-- Updated Demo Cards Section -->
+<div class="demo-access" style="background: #f8f9fa; padding: 25px; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: center; border: 1px solid #e0e0e0;">
+
+    <!-- [Keep existing heading and intro text...] -->
+    
+    <!-- GPT DEMO CARD -->
     <div class="demo-card">
-        <!-- ... (keep existing image/heading) ... -->
+        <!-- [Keep existing image and heading...] -->
         <div style="display: flex; gap: 10px; justify-content: center;">
             <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
                target="_blank"
@@ -219,22 +225,17 @@
                style="background: #3498db; flex: 1;">
                ▶ Demo Interactiva
             </a>
-            <a href="/assets/docs/SAMI-GPT-Guide.pdf"
-               target="_blank"
-               class="cta-button"
-               style="background: #2c3e50; flex: 1;"
-               download="SAMI-GPT-Guide.pdf">
-               📄 Ver Resumen
-            </a>
+            <button onclick="showComingSoon('GPT')" 
+                    class="cta-button"
+                    style="background: #2c3e50; flex: 1; cursor: pointer;">
+               📄 PDF (Próximamente)
+            </button>
         </div>
-        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">
-            <em>(PDF, 2.4MB)</em>
-        </p>
     </div>
-
+    
     <!-- LATAM DEMO CARD -->
     <div class="demo-card">
-        <!-- ... (keep existing image/heading) ... -->
+        <!-- [Keep existing image and heading...] -->
         <div style="display: flex; gap: 10px; justify-content: center;">
             <a href="https://carlosmsal22.github.io/SAMI-AI-LATAM/" 
                target="_blank"
@@ -242,20 +243,51 @@
                style="background: #2ecc71; flex: 1;">
                🌎 Versión LATAM
             </a>
-            <a href="/assets/docs/SAMI-LATAM-Guide.pdf"
-               target="_blank"
-               class="cta-button"
-               style="background: #2c3e50; flex: 1;"
-               download="SAMI-LATAM-Guide.pdf">
-               📄 Ver Resumen
-            </a>
+            <button onclick="showComingSoon('LATAM')" 
+                    class="cta-button"
+                    style="background: #2c3e50; flex: 1; cursor: pointer;">
+               📄 PDF (Próximamente)
+            </button>
         </div>
-        <p style="font-size: 0.8em; color: #666; margin-top: 5px;">
-            <em>(PDF, 3.1MB)</em>
-        </p>
+    </div>
+
+    <!-- Notification System -->
+    <div id="pdf-notification" style="display: none; position: fixed; top: 20px; right: 20px; background: #2ecc71; color: white; padding: 15px; border-radius: 5px; box-shadow: 0 3px 10px rgba(0,0,0,0.2); z-index: 1000;">
+        ¡Los resúmenes PDF estarán disponibles pronto!
     </div>
 </div>
+
+<script>
+function showComingSoon(demoType) {
+    const notification = document.getElementById('pdf-notification');
+    notification.textContent = `El PDF de ${demoType} estará disponible próximamente`;
+    notification.style.display = 'block';
     
+    setTimeout(() => {
+        notification.style.display = 'none';
+    }, 3000);
+    
+    // Optional: Track PDF interest
+    gtag('event', 'pdf_interest', {
+        'event_category': 'demo_interaction',
+        'event_label': demoType
+    });
+}
+</script>
+
+<style>
+/* Add to your existing styles */
+#pdf-notification {
+    animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    20% { opacity: 1; transform: translateY(0); }
+    80% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+</style>
     <p style="margin-top: 20px; font-size: 0.9em; color: #777;">
         <em>Nota: Las demostraciones se abrirán en una nueva pestaña.</em>
     </p>
