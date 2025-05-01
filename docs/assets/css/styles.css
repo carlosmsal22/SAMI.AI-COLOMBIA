@@ -35,9 +35,9 @@ body {
 }
 
 .partner-logos img {
-  width: 220px;
+  width: 220px;         /* Increase from 150px to 220px */
+  max-height: 120px;    /* Increase from 80px to 120px */
   height: auto;
-  max-height: 120px;
   object-fit: contain;
   filter: grayscale(100%) opacity(0.9);
   transition: all 0.3s ease;
