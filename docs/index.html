@@ -225,44 +225,47 @@
     SAMI.AI COLOMBIA es un modelo de inteligencia artificial especializado en investigación de mercado, segmentación, análisis cultural, escucha social y scraping, adaptado al contexto colombiano. Este GPT personalizado permite ejecutar análisis B2B y B2C con foco local y regional.
 </p>
 
-<!-- Enhanced Demo Access Section with Larger Image -->
-<div id="demo" class="demo-access" style="background: white; padding: 40px; border-radius: 12px; margin: 60px auto; max-width: 1000px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.08); border: 1px solid rgba(0,0,0,0.05);">
-    <h3 style="color: var(--primary); margin-bottom: 25px; font-size: 2em; font-weight: 700;">Explora Nuestra Demostración Interactiva</h3>
+<!-- IMAGE DEMO SECTION -->
+<div style="text-align: center; margin: 40px 0;">
+    <h3>🔮 Descubre lo que SAMI.AI-COLOMBIA puede hacer por tu empresa:</h3>
     
-    <p style="font-size: 1.2em; color: #555; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto;">
-        Vea a SAMI.AI en acción con este ejemplo práctico que muestra capacidades avanzadas de análisis de mercado:
-    </p>
-    
-    <div style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: all 0.3s ease; max-width: 900px; margin: 0 auto; border: 1px solid rgba(0,0,0,0.05);">
-        <!-- Larger Image Container -->
-        <div style="height: 400px; background: #f0f7ff; border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 25px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); position: relative;">
-            <img src="/assets/img/SAMI-GPT.png" 
-                 alt="Captura SAMI-GPT Demos" 
-                 style="height: 100%; width: auto; max-width: 100%; object-fit: contain; transition: transform 0.5s ease;">
-            <div style="position: absolute; bottom: 10px; right: 10px; background: rgba(0,0,0,0.6); color: white; padding: 5px 10px; border-radius: 4px; font-size: 0.9em;">
-                Click para ampliar
-            </div>
-        </div>
+    <!-- Image Container with Multiple Source Options -->
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); margin: 20px 0; background: #f5f5f5;">
+        <!-- Option 1: Direct GitHub Raw URL (Most Reliable) -->
+        <img src="https://raw.githubusercontent.com/carlosmsal22/SAMI.AI-COLOMBIA/main/docs/assets/img/EXITO.png"
+             alt="SAMI.AI en acción"
+             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain;"
+             onerror="this.onerror=null;this.src='assets/img/EXITO.png';">
         
-        <h4 style="color: var(--primary); margin: 20px 0; font-size: 1.5em;">Demo: Análisis con GPT</h4>
-        <p style="color: #666; font-size: 1.1em; margin-bottom: 30px; line-height: 1.6;">
-            Ejemplos reales de generación de informes automáticos y segmentación predictiva con inteligencia artificial especializada en el mercado colombiano.
-        </p>
-        <div style="display: flex; justify-content: center;">
-            <a href="https://carlosmsal22.github.io/SAMI-GPT-DEMOS/" 
-               target="_blank"
-               class="cta-button" 
-               style="background: var(--secondary); max-width: 400px; padding: 15px 30px;">
-               ▶ Ver Demo Interactiva
-            </a>
+        <!-- Fallback Text -->
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #666; display: none;"
+             id="image-fallback">
+            Image failed to load. Please check the console for errors.
         </div>
     </div>
     
-    <p style="margin-top: 30px; font-size: 0.9em; color: #777;">
-        <em>Nota: La demostración se abrirá en una nueva pestaña.</em>
-    </p>
+    <p style="margin-top: 15px; font-style: italic;">Ejemplo real de análisis de mercado realizado para Éxito Colombia</p>
 </div>
 
+<!-- Debugging Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const img = document.querySelector('#demo-image');
+        const fallback = document.getElementById('image-fallback');
+        
+        img.onerror = function() {
+            console.error('Failed to load image at:', this.src);
+            fallback.style.display = 'block';
+            // Try local path as last resort
+            this.src = 'assets/img/EXITO.png';
+        };
+        
+        // Log which image source worked
+        img.onload = function() {
+            console.log('Successfully loaded image from:', this.src);
+        };
+    });
+</script>
 <!-- Add this JavaScript for image zoom -->
 <script>
 document.querySelector('.demo-access img').addEventListener('click', function() {
