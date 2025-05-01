@@ -89,3 +89,13 @@ body {
   transform: scale(1.1) !important;
 }
 /* [Añade aquí TODOS tus otros estilos originales] */
+/* FORCE LARGE LOGOS - OVERRIDES ALL OTHER STYLES */
+.partner-logos-container img {
+  width: 300px !important;
+  height: auto !important;
+  min-width: 300px !important;
+  max-width: 300px !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  margin: 15px !important;
+}
