@@ -35,12 +35,12 @@ body {
 }
 
 .partner-logos img {
-  width: 220px;
-  max-height: 120px;
-  height: auto;
-  object-fit: contain;
-  filter: grayscale(100%) opacity(0.9);
-  transition: all 0.3s ease;
+    width: 220px;           /* Increased from 150px */
+    max-height: 140px;      /* Increased from 80px */
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.9);
+    transition: all 0.3s ease;
 }
 
 .partner-logos img:hover {
