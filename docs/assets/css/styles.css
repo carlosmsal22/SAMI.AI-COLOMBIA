@@ -61,4 +61,31 @@ body {
   transform: scale(1.1);
 }
 
+/* Add this at the BOTTOM of your styles.css to ensure it overrides other rules */
+.partner-logos {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 60px !important;
+  flex-wrap: wrap !important;
+  margin: 60px 0 !important;
+  padding: 30px !important;
+  background-color: #f8f9fa !important;
+  border-radius: 12px !important;
+  text-align: center !important;
+}
+
+.partner-logos img {
+  width: 280px !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  filter: grayscale(100%) opacity(0.9) !important;
+  transition: all 0.3s ease !important;
+  margin: 10px 0 !important;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0) opacity(1) !important;
+  transform: scale(1.1) !important;
+}
 /* [Añade aquí TODOS tus otros estilos originales] */
