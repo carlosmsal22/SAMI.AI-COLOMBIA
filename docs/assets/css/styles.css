@@ -34,18 +34,31 @@ body {
   margin-top: 10px;
 }
 
+/* Partner Logos - Updated for prominence */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 60px 0;
+  padding: 30px 0;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
 .partner-logos img {
-    width: 220px;           /* Increased from 150px */
-    max-height: 140px;      /* Increased from 80px */
-    height: auto;
-    object-fit: contain;
-    filter: grayscale(100%) opacity(0.9);
-    transition: all 0.3s ease;
+  width: 280px;
+  max-height: 180px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.9);
+  transition: all 0.3s ease;
 }
 
 .partner-logos img:hover {
   filter: grayscale(0) opacity(1);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 /* [Añade aquí TODOS tus otros estilos originales] */
