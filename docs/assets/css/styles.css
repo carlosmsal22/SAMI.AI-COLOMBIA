@@ -34,4 +34,18 @@ body {
   margin-top: 10px;
 }
 
+.partner-logos img {
+  width: 180px;
+  height: auto;
+  max-height: 100px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.9);
+  transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+  filter: grayscale(0) opacity(1);
+  transform: scale(1.05);
+}
+
 /* [Añade aquí TODOS tus otros estilos originales] */
