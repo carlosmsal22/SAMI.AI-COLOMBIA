@@ -613,35 +613,36 @@
 </footer>
 
 <script>
-// Image zoom functionality
-document.querySelector('.demo-access img').addEventListener('click', function() {
-    const imgSrc = this.src;
-    const overlay = document.createElement('div');
-    overlay.style.position = 'fixed';
-    overlay.style.top = '0';
-    overlay.style.left = '0';
-    overlay.style.width = '100%';
-    overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
-    overlay.style.display = 'flex';
-    overlay.style.alignItems = 'center';
-    overlay.style.justifyContent = 'center';
-    overlay.style.zIndex = '10000';
-    overlay.style.cursor = 'zoom-out';
+// Image zoom functionality for all images with class 'zoomable'
+document.querySelectorAll('.zoomable').forEach(function(img) {
+    img.addEventListener('click', function () {
+        const imgSrc = this.src;
+        const overlay = document.createElement('div');
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = '100%';
+        overlay.style.backgroundColor = 'rgba(0,0,0,0.9)';
+        overlay.style.display = 'flex';
+        overlay.style.alignItems = 'center';
+        overlay.style.justifyContent = 'center';
+        overlay.style.zIndex = '10000';
+        overlay.style.cursor = 'zoom-out';
 
-    const zoomedImg = document.createElement('img');
-    zoomedImg.src = imgSrc;
-    zoomedImg.style.maxHeight = '90vh';
-    zoomedImg.style.maxWidth = '90vw';
-    zoomedImg.style.objectFit = 'contain';
+        const zoomedImg = document.createElement('img');
+        zoomedImg.src = imgSrc;
+        zoomedImg.style.maxHeight = '90vh';
+        zoomedImg.style.maxWidth = '90vw';
+        zoomedImg.style.objectFit = 'contain';
 
-    overlay.appendChild(zoomedImg);
-    document.body.appendChild(overlay);
+        overlay.appendChild(zoomedImg);
+        document.body.appendChild(overlay);
 
-    overlay.addEventListener('click', function() {
-        document.body.removeChild(overlay);
+        overlay.addEventListener('click', () => document.body.removeChild(overlay));
     });
 });
+</script>
 
 </body>
 </html>
